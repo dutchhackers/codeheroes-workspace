@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@codeheroes/auth": ["libs/codeheroes/auth/src/index.ts"],
+      "@codeheroes/core": ["libs/codeheroes/core/src/index.ts"],
+      "@codeheroes/data": ["libs/codeheroes/data/src/index.ts"],
+      "@codeheroes/game": ["libs/codeheroes/game/src/index.ts"],
+      "@codeheroes/player": ["libs/codeheroes/player/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

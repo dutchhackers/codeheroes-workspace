@@ -7,5 +7,6 @@
     "codeheroes-data": "libs/codeheroes/data",
     "codeheroes-game": "libs/codeheroes/game",
     "codeheroes-player": "libs/codeheroes/player"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }

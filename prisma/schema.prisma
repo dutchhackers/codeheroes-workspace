@@ -8,12 +8,14 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  email     String   @unique
-  firstName String?
-  lastName  String?
-  password  String
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  email       String   @unique
+  firstName   String?
+  lastName    String?
+  password    String
+  firebaseUid String?  @unique
+
   // relation to player?
 }
 

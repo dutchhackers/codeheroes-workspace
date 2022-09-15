@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/codeheroes/api/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/codeheroes-api/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,9 +8,9 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/codeheroes-api",
-        "main": "apps/codeheroes/api/src/main.ts",
-        "tsConfig": "apps/codeheroes/api/tsconfig.app.json",
-        "assets": ["apps/codeheroes/api/src/assets"],
+        "main": "apps/codeheroes-api/src/main.ts",
+        "tsConfig": "apps/codeheroes-api/tsconfig.app.json",
+        "assets": ["apps/codeheroes-api/src/assets"],
         "generatePackageJson": false
       },
       "configurations": {
@@ -20,8 +20,8 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/codeheroes/api/src/environments/environment.ts",
-              "with": "apps/codeheroes/api/src/environments/environment.prod.ts"
+              "replace": "apps/codeheroes-api/src/environments/environment.ts",
+              "with": "apps/codeheroes-api/src/environments/environment.prod.ts"
             }
           ]
         }
@@ -37,21 +37,21 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/codeheroes/api/**/*.ts"]
+        "lintFilePatterns": ["apps/codeheroes-api/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/codeheroes-api"],
       "options": {
-        "jestConfig": "apps/codeheroes/api/jest.config.ts",
+        "jestConfig": "apps/codeheroes-api/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "dockerize": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "docker build -f ./apps/codeheroes/api/server/Dockerfile . -t codeheroes-api"
+        "command": "docker build -f ./apps/codeheroes-api/server/Dockerfile . -t codeheroes-api"
       },
       "parallel": false
     },

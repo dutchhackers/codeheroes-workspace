@@ -12,6 +12,6 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/apps/codeheroes-api',
-  preset: '../../../jest.preset.js',
+  coverageDirectory: '../../coverage/apps/codeheroes-api',
+  preset: '../../jest.preset.js',
 };

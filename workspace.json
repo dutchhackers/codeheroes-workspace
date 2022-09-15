@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "codeheroes-api": "apps/codeheroes/api",
+    "codeheroes-api": "apps/codeheroes-api",
     "codeheroes-auth": "libs/codeheroes/auth",
     "codeheroes-core": "libs/codeheroes/core",
     "codeheroes-data": "libs/codeheroes/data",

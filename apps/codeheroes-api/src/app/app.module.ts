@@ -7,10 +7,9 @@ import { CoreModule } from '@codeheroes/core';
 import { AuthModule } from '@codeheroes/auth';
 import { DataModule } from '@codeheroes/data';
 import { PlayerModule } from '@codeheroes/player';
-import { GameModule } from '@codeheroes/game';
 
 @Module({
-  imports: [DataModule, CoreModule, AuthModule, PlayerModule, GameModule],
+  imports: [DataModule, CoreModule, AuthModule, PlayerModule],
   controllers: [AppController],
   providers: [AppService],
 })

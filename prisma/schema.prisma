@@ -7,25 +7,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id          Int      @id @default(autoincrement())
-  createdAt   DateTime @default(now())
-  email       String   @unique
-  firstName   String?
-  lastName    String?
-  password    String
-  firebaseUid String?  @unique
-
-  // relation to player?
-}
-
 model Player {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String
-  nickname  String?
-  avatar    String?
-  active    Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  name        String
+  nickname    String?
+  avatar      String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+  firebaseUid String?  @unique
 }

@@ -13,8 +13,8 @@ If you wish to develop or contribute to this repo, we suggest the following:
 - Clone this repository
 
 ```
-git clone https://github.com/move4mobile/coders-workspace
-cd coders-workspace
+git clone https://github.com/dutchhackers/codeheroes-workspace
+cd codeheroes-workspace
 ```
 
 - Install this project's dependencies on your computer

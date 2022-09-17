@@ -18,7 +18,6 @@
       "@codeheroes/auth": ["libs/codeheroes/auth/src/index.ts"],
       "@codeheroes/core": ["libs/codeheroes/core/src/index.ts"],
       "@codeheroes/data": ["libs/codeheroes/data/src/index.ts"],
-      "@codeheroes/game": ["libs/codeheroes/game/src/index.ts"],
       "@codeheroes/player": ["libs/codeheroes/player/src/index.ts"]
     }
   },

@@ -1,11 +1,11 @@
 {
   "version": 2,
   "projects": {
-    "codeheroes-api": "apps/codeheroes-api",
     "codeheroes-auth": "libs/codeheroes/auth",
     "codeheroes-core": "libs/codeheroes/core",
     "codeheroes-data": "libs/codeheroes/data",
-    "codeheroes-player": "libs/codeheroes/player"
+    "codeheroes-player": "libs/codeheroes/player",
+    "graph-api": "apps/graph-api"
   },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }

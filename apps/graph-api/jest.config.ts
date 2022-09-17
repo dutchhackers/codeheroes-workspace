@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'codeheroes-api',
+  displayName: 'graph-api',
 
   globals: {
     'ts-jest': {
@@ -12,6 +12,6 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/codeheroes-api',
+  coverageDirectory: '../../coverage/apps/graph-api',
   preset: '../../jest.preset.js',
 };

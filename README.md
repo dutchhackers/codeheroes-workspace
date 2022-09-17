@@ -29,14 +29,14 @@ Tip: if you have nvm installed, you can run `nvm use` to auto-detect the preferr
 
 - Create .env file
 
-Create a `.env` file in folder `libs/codeheroes/core`
+Create a `.env` file in the root folder
 
 Tip: copy `sample.env` (from core lib: libs/codeheroes/core) to `.env` and fill in the environment variables
 
 ```
 
 NODE_ENV=development
-PORT=5002
+PORT=5001
 
 ```
 
@@ -48,7 +48,7 @@ PORT=5002
 nx serve codeheroes-api
 ```
 
-Go to http://localhost:5002/graphql to open the Apollo GraphQL sandbox
+Go to http://localhost:5001/graphql to open the Apollo GraphQL sandbox
 
 ### General commands
 

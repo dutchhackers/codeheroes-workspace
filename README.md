@@ -1,11 +1,71 @@
-# Code Heroes
+# Codeheroes Development Setup
 
-[WIP]
+## Applications Overview
 
-This monorepo will household some Code Heroes related sideprojects. Still a lot of work in progress, so use this at your own risks!
+| App name | Stack setup                 | Status  | Description              |
+| -------- | --------------------------- | ------- | ------------------------ |
+| api      | NestJS + GraphQL + Sheets   | Pending | Codeheroes API (backend) |
 
-## Overview op projects
+## Development setup
 
-| Project name | Description | Migration status |
-|---|---|---|
-| Code Heroes | Gamification platform where dev's can team up and battle against other teams. Featured teams are Justice League, X-Men, The Avengers and Suicide Squad. Although this in-house game is already running for over 4+ years now, we're in the middle of migrating it to this monorepo. | Pending |
+If you wish to develop or contribute to this repo, we suggest the following:
+
+- Clone this repository
+
+```
+git clone https://github.com/dutchhackers/codeheroes-workspace
+cd codeheroes-workspace
+```
+
+- Install this project's dependencies on your computer
+
+```
+npm install
+```
+
+Advised to use Node version 14 (or higher).
+
+Tip: if you have nvm installed, you can run `nvm use` to auto-detect the preferred Node version
+
+- Create .env file
+
+Create a `.env` file in folder `libs/codeheroes/core`
+
+Tip: copy `sample.env` (from core lib: libs/codeheroes/core) to `.env` and fill in the environment variables
+
+```
+
+NODE_ENV=development
+PORT=5002
+
+```
+
+### Run Codeheroes API locally
+
+- Run Codeheroes API
+
+```
+nx serve codeheroes-api
+```
+
+Go to http://localhost:5002/graphql to open the Apollo GraphQL sandbox
+
+### General commands
+
+- build application
+
+```
+nx build codeheroes-api
+```
+
+- test application
+
+```
+nx test codeheroes-api
+```
+
+- lint application
+
+```
+nx lint codeheroes-api
+```

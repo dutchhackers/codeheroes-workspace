@@ -23,7 +23,7 @@ cd codeheroes-workspace
 npm install
 ```
 
-Advised to use Node version 14 (or higher).
+Advised to use Node version 16 (or higher).
 
 Tip: if you have nvm installed, you can run `nvm use` to auto-detect the preferred Node version
 
@@ -31,7 +31,7 @@ Tip: if you have nvm installed, you can run `nvm use` to auto-detect the preferr
 
 Create a `.env` file in the root folder
 
-Tip: copy `sample.env` (from core lib: libs/codeheroes/core) to `.env` and fill in the environment variables
+Tip: copy `sample.env` to `.env` and fill in the environment variables
 
 ```
 
@@ -42,10 +42,10 @@ PORT=5001
 
 ### Run Codeheroes API locally
 
-- Run Codeheroes API
+- Run Codeheroes API (GraphQL)
 
 ```
-nx serve codeheroes-api
+nx serve graph-api
 ```
 
 Go to http://localhost:5001/graphql to open the Apollo GraphQL sandbox
@@ -55,17 +55,17 @@ Go to http://localhost:5001/graphql to open the Apollo GraphQL sandbox
 - build application
 
 ```
-nx build codeheroes-api
+nx build graph-api
 ```
 
 - test application
 
 ```
-nx test codeheroes-api
+nx test graph-api
 ```
 
 - lint application
 
 ```
-nx lint codeheroes-api
+nx lint graph-api
 ```

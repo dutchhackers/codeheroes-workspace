@@ -57,7 +57,7 @@
     "@nrwl/node": "14.7.5",
     "@nrwl/tao": "14.7.5",
     "@nrwl/workspace": "14.7.5",
-    "@prisma/client": "^4.3.1",
+    "@prisma/client": "^4.4.0",
     "@types/cache-manager": "^4.0.2",
     "@types/jest": "28.1.8",
     "@types/luxon": "^3.0.1",

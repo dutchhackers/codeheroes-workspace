@@ -4,14 +4,16 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nrwl/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/graph-api",
         "main": "apps/graph-api/src/main.ts",
         "tsConfig": "apps/graph-api/tsconfig.app.json",
         "assets": ["apps/graph-api/src/assets"],
-        "generatePackageJson": false
+        "generatePackageJson": false,
+        "target": "node",
+        "compiler": "tsc"
       },
       "configurations": {
         "production": {
@@ -42,21 +44,21 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/graph-api"],
+      "outputs": ["{workspaceRoot}/coverage/apps/graph-api"],
       "options": {
         "jestConfig": "apps/graph-api/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "dockerize": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "command": "docker build -f ./apps/graph-api/server/Dockerfile . -t codeheroes-api"
       },
       "parallel": false
     },
     "docker-push": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "commands": [
           "if [ {args.projectId} = \"undefined\" ]; then echo \"provide project arg\"; else docker tag codeheroes-api gcr.io/{args.projectId}/codeheroes-api; fi ",

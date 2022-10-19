@@ -12,7 +12,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/codeheroes/data"],
+      "outputs": ["{workspaceRoot}/coverage/libs/codeheroes/data"],
       "options": {
         "jestConfig": "libs/codeheroes/data/jest.config.ts",
         "passWithNoTests": true

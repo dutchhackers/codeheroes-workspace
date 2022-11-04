@@ -61,7 +61,7 @@
     "@prisma/client": "^4.5.0",
     "@types/cache-manager": "^4.0.2",
     "@types/jest": "28.1.8",
-    "@types/luxon": "^3.0.2",
+    "@types/luxon": "^3.0.3",
     "@types/node": "18.11.9",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
